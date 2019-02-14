@@ -2,6 +2,10 @@
 
 Thanks to everyone who contributed to this collection!
 
+**Notes:**  
+This format is temporary as we set up a convenient directory structure to be able to directly import community curated profiles!
+
+
 ```ini
 ; Example #1: BOTW
 ; Overclock CPU when docked
