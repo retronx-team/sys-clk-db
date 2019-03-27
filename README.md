@@ -140,10 +140,9 @@ handheld_mem=1065
 
 ```ini
 #Super Smash Bros
-#Fast loading times, great in game battle speeds and nice battery savings
+#Fast loading times and great in game battle speeds
 [01006A800016E000]
 handheld_cpu=1220
-handheld_gpu=230
 handheld_mem=1600
 ```
 
