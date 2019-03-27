@@ -154,3 +154,23 @@ handheld_mem=1600
 handheld_cpu=1224
 handheld_mem=1600
 ```
+
+```ini
+#Urban Trial Playground
+#slight upclock for CPU and GPU, will help with slowdown and keeps dynamic resolution high, especially when charging
+[01001B10068EC000]
+docked_cpu=1122
+handheld_cpu=1122
+handheld_gpu=614
+handheld_mem=1600
+```
+
+```ini
+#Trials Rising
+#slight upclock for CPU and GPU, will help with slowdown and keeps dynamic resolution high, especially when charging
+[01003E800A102000]
+docked_cpu=1122
+handheld_cpu=1122
+handheld_gpu=614
+handheld_mem=1600
+```
