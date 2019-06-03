@@ -139,18 +139,266 @@ handheld_mem=1065
 ```
 
 ```ini
-#Super Smash Bros
-#Fast loading times, great in game battle speeds and nice battery savings
-[01006A800016E000]
-handheld_cpu=1220
-handheld_gpu=230
-handheld_mem=1600
-```
-
-```ini
 #Furi
 #Sustain the framerate, more noticeable after the 3rd fight
 [01009D3008D20000]
 handheld_cpu=1224
 handheld_mem=1600
 ```
+
+```ini
+#Modern Combat Blackout
+#Absolutely needed to avoid frame drops in handheld mode
+[0100D8700B712000]
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+# Trials Rising
+# OC perform, smoother frames.
+[01003E800A102000]
+docked_cpu=1224
+docked_gpu=844
+docked_mem=1600
+handheld_cpu=1020
+handheld_gpu=460
+```
+
+```ini
+# Undertale
+# Increases battery life
+[010080B00AD66000]
+handheld_gpu=230
+handheld_mem=1065
+```
+
+```ini
+#ARMS
+#Underclock to save battery
+[01009B500007C000]
+handheld_cpu=918    
+handheld_mem=1065
+```
+
+```ini
+#Fire Emblem Warriors 
+#Provides a smoother framerate whilst undocked
+[0100F15003E64000]
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Wolfenstein II: The New Colossus
+; Provides higher resolution with more stable framerate in undocked mode
+[01009040091E0000]
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Layers of Fear: Legacy
+; More stable 60 FPS across whole game
+[0100BF5006A7C000]
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Snake Pass
+; Improve FPS while charging
+; Improve battery life in handheld
+[0100C0F0020E8000]
+handheld_cpu=918
+handheld_mem=1600
+handheld_charging_cpu=1224
+handheld_charging_mem=1600
+handheld_charging_gpu=460
+```
+
+```ini
+; West of Loathing
+; Downclock all the things. It's a 2D game.
+[010031B00A4E8000]
+handheld_cpu=918
+handheld_mem=800
+handheld_gpu=153.6
+```
+
+```ini
+; Mega Man X Legacy Collection
+; Underclock to save on battery
+[01005C60086BE000]
+handheld_cpu=816
+handheld_gpu=230
+handheld_mem=665
+```
+
+```ini
+;VVVVVV
+;Underclock to save battery with  bare minimum settings
+[0100B1E0022F8000]
+handheld_cpu=612
+handheld_gpu=76
+handheld_mem=665
+```
+
+```ini
+;Bloodstained: Curse of the Moon
+;Underclocked to save battery
+[01004B800AF5A000]
+handheld_cpu=612
+handheld_gpu=153
+handheld_mem=665
+```
+
+```ini
+;Sonic Mania
+;Underclock to save battery with bare minimum settings
+[01009AA000FAA000]
+handheld_cpu=612
+handheld_gpu=76
+handheld_mem=665
+```
+
+```ini
+;Mega Man 11
+;Underclock to save battery
+[0100B0C0086B0000]
+handheld_cpu=612
+handheld_gpu=230
+handheld_mem=665
+```
+
+```ini
+;Cave Story+
+;Underclock to save battery
+[0100B7D0022EE000]
+handheld_cpu=612
+handheld_gpu=153
+handheld_mem=665
+```
+
+```ini
+;Blossom Tales: The Sleeping King
+;Underclock to save battery
+[0100C1000706C000]
+handheld_cpu=612
+handheld_gpu=153
+handheld_mem=665
+```
+
+```ini
+;Shovel Knight
+;Underclock to save battery with bare minimum settings
+[010057D0021E8000]
+handheld_cpu=612
+handheld_gpu=76
+handheld_mem=665
+```
+
+```ini
+;Mighty Gunvolt Burst
+;Underclock to save battery with bare minimum settings
+[01000E2003FA0000]
+handheld_cpu=612
+handheld_gpu=76
+handheld_mem=665
+```
+
+```ini
+;Captain Toad: Treasure Tracker
+;Underclock to save battery
+[01009BF0072D4000]
+handheld_cpu=612
+handheld_gpu=307
+handheld_mem=665
+```
+
+```ini
+;Blaster Master Zero 2
+;Underclock to save battery
+[01005AA00D676000]
+handheld_cpu=612
+handheld_gpu=230
+handheld_mem=665
+```
+
+```ini
+;Turok
+;Underclock to save battery on bare minimum settings
+[010085500D5F6000]
+handheld_cpu=612
+handheld_gpu=76
+handheld_mem=665
+```
+
+```ini
+;Super Meat Boy
+;Underclock to save battery
+[01004F8006A78000]
+handheld_cpu=612
+handheld_gpu=230
+handheld_mem=800
+```
+
+```ini
+;Axiom Verge
+;Underclock to save battery
+[0100052004384000]
+handheld_cpu=612
+handheld_gpu=153
+handheld_mem=665
+```
+
+```ini
+;The Binding of Isaac: Afterbirth+
+;Underclock to save battery
+[010021C000B6A000]
+handheld_cpu=612
+handheld_gpu=230
+handheld_mem=665
+```
+
+```ini
+;Mutant Mudds Collection
+;Underclock to save battery with bare minimum settings
+[01004BE004A86000]
+handheld_cpu=612
+handheld_gpu=76
+handheld_mem=665
+```
+
+```ini
+;Travis Strikes Again
+;Tweak as you see fit, this here is to save some battery VIA the gpu at lowest official clock versus 384
+;via gbatemp thread
+[010011600c946000]
+handheld_charging_cpu=1122
+handheld_cpu=1122
+handheld_gpu=307
+```
+
+```ini
+; DOOM
+;Better Framerate (Adjust docked gpu between 768-921 based on your comfort level)
+;via gbatemp thread
+[0100416004C00000]
+handheld_gpu=460
+handheld_mem=1600
+handheld_charging_official_gpu=768
+docked_cpu=1224
+docked_gpu=844
+```
+
+```ini
+;Minecraft
+;Better Framerate
+[0100D71004694000]
+handheld_cpu=1224
+handheld_mem=1600
+``` 
