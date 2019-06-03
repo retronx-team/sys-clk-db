@@ -402,3 +402,11 @@ docked_gpu=844
 handheld_cpu=1224
 handheld_mem=1600
 ``` 
+
+```ini
+; Youtube
+; saves battery life with no reduction in performance as far as I can tell
+[01003A400C3DA000]
+handheld_gpu=153
+handheld_mem=665
+```
