@@ -426,3 +426,11 @@ handheld_mem=1600
 handheld_cpu=1224
 handheld_mem=1600
 ``` 
+
+```ini
+; Youtube
+; saves battery life
+[01003A400C3DA000]
+handheld_gpu=153
+handheld_mem=665
+```
