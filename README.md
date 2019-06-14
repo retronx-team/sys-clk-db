@@ -36,7 +36,8 @@ in the channel `#oc-perf-submissions`
 ; ARMS
 ; Underclock to save battery
 [01009B500007C000]
-handheld_cpu=918    
+handheld_cpu=918
+handheld_gpu=230    
 handheld_mem=1065
 ```
 
@@ -191,6 +192,15 @@ handheld_mem=1600
 ```
 
 ```ini
+; Mario Kart 8 Deluxe
+; Underclock to save battery
+[0100152000022000]
+handheld_cpu=918
+handheld_gpu=230
+handheld_mem=1065
+```
+
+```ini
 ; Mega Man 11
 ; Underclock to save battery
 [0100B0C0086B0000]
@@ -251,10 +261,20 @@ handheld_mem=800
 ```
 
 ```ini
+; NES - Nintendo Switch Online
+; Underclock to save battery
+[0100D870045B6000]
+handheld_cpu=612
+handheld_mem=665
+handheld_gpu=76
+```
+
+```ini
 ; Pokemon Lets go Eevee
 ; Helps reduce UI slowdowns as well as varidian forest.
 [0100187003A36000]
 handheld_gpu=460
+handheld_mem=1600
 ```
 
 ```ini
@@ -262,6 +282,7 @@ handheld_gpu=460
 ; Helps reduce UI slowdowns as well as varidian forest.
 [010003f003a34000]
 handheld_gpu=460
+handheld_mem=1600
 ```
 
 ```ini
@@ -283,6 +304,15 @@ handheld_mem=665
 handheld_cpu=816
 handheld_gpu=230
 handheld_mem=800
+```
+
+```ini
+;Resident Evil 4
+;More constant 60FPS
+[010099A00BC1E000]
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600 
 ```
 
 ```ini
@@ -398,6 +428,15 @@ docked_cpu=1122
 handheld_cpu=1122
 handheld_gpu=614
 handheld_mem=1600
+```
+
+```ini
+;VA-11 HALL-A
+;Underclock to save battery and to serve more drinks
+[010086500D3C8000]
+handheld_cpu=816
+handheld_gpu=230
+handheld_mem=800 
 ```
 
 ```ini
