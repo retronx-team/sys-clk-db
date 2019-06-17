@@ -307,8 +307,8 @@ handheld_mem=800
 ```
 
 ```ini
-;Resident Evil 4
-;More constant 60FPS
+; Resident Evil 4
+; More constant 60FPS
 [010099A00BC1E000]
 handheld_cpu=1224
 handheld_gpu=460
@@ -431,8 +431,8 @@ handheld_mem=1600
 ```
 
 ```ini
-;VA-11 HALL-A
-;Underclock to save battery and to serve more drinks
+; VA-11 HALL-A
+; Underclock to save battery and to serve more drinks
 [010086500D3C8000]
 handheld_cpu=816
 handheld_gpu=230
