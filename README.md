@@ -42,6 +42,15 @@ handheld_mem=1065
 ```
 
 ```ini
+; Assassin creed 3 remastered 
+; Overclock to get the best performance while docked. 
+[01007F600B134000]
+docked_cpu=1683
+docked_gpu=921
+docked_mem=1600
+```
+
+```ini
 ; Atari Flashback Classics
 ; Massive underclock with no hit to performance
 [0100CF3007578000]
@@ -78,12 +87,33 @@ handheld_mem=665
 ```
 
 ```ini
+; Bloodstained: Ritual of the Night
+; Provides the game to run generally smoother in handheld mode
+[0100BF500207C000]
+docked_cpu=1683
+docked_gpu=844
+handheld_charging_cpu=1224
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
 ; Blossom Tales: The Sleeping King
 ; Underclock to save battery
 [0100C1000706C000]
 handheld_cpu=612
 handheld_gpu=153
 handheld_mem=665
+```
+
+```ini
+; Cadence of Hyrule: Crypt of the NecroDancer featuring The Legend of Zelda
+; underclock to save battery
+[01000B900D8B0000]
+handheld_cpu=918
+handheld_gpu=153
+handheld_mem=1065
 ```
 
 ```ini
@@ -102,6 +132,15 @@ handheld_mem=665
 handheld_cpu=612
 handheld_gpu=153
 handheld_mem=665
+```
+
+```ini
+; DANDY DUNGEON - LEGEND OF BRAVE YAMADA -
+; Underclock to save battery
+[0100DFB00D808000]
+handheld_cpu=816
+handheld_gpu=230
+handheld_mem=800
 ```
 
 ```ini
@@ -354,6 +393,15 @@ handheld_mem=665
 ```
 
 ```ini
+; Super Mario Maker 2
+; Underclock to save battery (slightly increases loading times)
+[01009B90006DC000]
+handheld_cpu=816
+handheld_gpu=230    
+handheld_mem=1065
+```
+
+```ini
 ; Super Meat Boy
 ; Underclock to save battery
 [01004F8006A78000]
@@ -455,6 +503,15 @@ handheld_mem=665
 handheld_cpu=918
 handheld_mem=800
 handheld_gpu=153.6
+```
+
+```ini
+; What Remains of Edith Finch
+; Higher resolution in handheld mode
+[010038900DFE0000]
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
 ```
 
 ```ini
