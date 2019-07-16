@@ -87,6 +87,20 @@ handheld_mem=665
 ```
 
 ```ini
+; Bloodstained: Ritual of the Night CHT
+; Provides the game to run generally smoother in handheld mode
+[010025A00DF2A000]
+docked_cpu=1683
+docked_gpu=921
+handheld_charging_cpu=1224
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
 ; Bloodstained: Ritual of the Night
 ; Provides the game to run generally smoother in handheld mode
 [0100BF500207C000]
@@ -156,6 +170,15 @@ docked_gpu=844
 ```
 
 ```ini
+; Dragon Quest Builders 2
+; Save a bit of battery, retaining performance
+[010042000A986000]
+handheld_cpu=816
+handheld_gpu=307
+handheld_mem=1065
+```
+
+```ini
 ; Fire Emblem Warriors 
 ; Provides a smoother framerate whilst undocked
 [0100F15003E64000]
@@ -196,6 +219,13 @@ handheld_mem=1600
 handheld_gpu=460
 handheld_mem=1600
 ```
+
+; Graveyard Keeper
+; Underclock to save battery (slightly increases loading times)
+[0100B6800B5C8000]
+handheld_cpu=816
+handheld_gpu=230    
+handheld_mem=800
 
 ```ini
 ; Grip
