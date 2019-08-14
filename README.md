@@ -564,6 +564,16 @@ handheld_mem=665
 ```
 
 ```ini
+; Turok 2: Seeds of Evil
+; Underclock to save battery
+[0100CDC00D8D6000]
+handheld_cpu=612
+handheld_gpu=153
+handheld_mem=665
+```
+
+
+```ini
 ; Undertale
 ; Increases battery life
 [010080B00AD66000]
