@@ -273,12 +273,14 @@ handheld_gpu=460
 handheld_mem=1600
 ```
 
+```ini
 ; Graveyard Keeper
 ; Underclock to save battery (slightly increases loading times)
 [0100B6800B5C8000]
 handheld_cpu=816
 handheld_gpu=230    
 handheld_mem=800
+```
 
 ```ini
 ; Grip
