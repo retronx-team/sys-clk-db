@@ -170,12 +170,65 @@ docked_gpu=844
 ```
 
 ```ini
+; Dragon Dogma Dark Arisen
+; Better Framerate
+[010032C00AC58800]
+docked_cpu=1224
+docked_gpu=844
+handheld_charging_cpu=1122
+handheld_charging_gpu=768
+handheld_charging_official_cpu=1122
+handheld_charging_official_gpu=768
+handheld_cpu=1020
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Dragon Dogma Dark Arisen JPN
+; Better Framerate
+[010057E00AC56000]
+docked_cpu=1224
+docked_gpu=844
+handheld_charging_cpu=1122
+handheld_charging_gpu=768
+handheld_charging_official_cpu=1122
+handheld_charging_official_gpu=768
+handheld_cpu=1020
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
 ; Dragon Quest Builders 2
 ; Save a bit of battery, retaining performance
 [010042000A986000]
 handheld_cpu=816
 handheld_gpu=307
 handheld_mem=1065
+```
+
+```ini
+; Dragon Quest Builders 2
+; Fixed Docked & Handheld FPS stutter
+[010042000A986000]
+docked_cpu=1224
+docked_gpu=768
+handheld_gpu=460
+handheld_charging_gpu=537
+```
+
+```ini
+; Fire Emblem Three Houses 
+; Provides a smoother framerate whilst undocked and better framerate docked
+[010055D009F78000]
+docked_cpu=1224
+docked_gpu=844
+handheld_charging_cpu=1224
+handheld_charging_gpu=768
+handheld_cpu=1020
+handheld_gpu=460
+handheld_mem=1600
 ```
 
 ```ini
@@ -269,6 +322,18 @@ handheld_gpu=230
 handheld_mem=1065
 ```
 
+``ini
+; MARVEL ULTIMATE ALLIANCE 3
+; Better framerate in handheld mode
+[010060700AC50000]
+handheld_charging_cpu=1224
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1020
+handheld_gpu=460
+handheld_mem=1600
+```
+
 ```ini
 ; Mega Man 11
 ; Underclock to save battery
@@ -336,6 +401,14 @@ handheld_mem=800
 handheld_cpu=612
 handheld_mem=665
 handheld_gpu=76
+```
+
+```ini
+; Pillars of Eternity
+; Resolves some issues with framepacing
+[0100D6200E130000]
+handheld_cpu=1581
+docked_cpu=1581
 ```
 
 ```ini
@@ -549,6 +622,22 @@ handheld_mem=1600
 ; Provides higher resolution with more stable framerate in undocked mode
 [01009040091E0000]
 handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Xenoblade Chronicles 2
+; Improves performance and resolution in handheld
+[0100E95004038000]
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Xenoblade Chronicles 2 Torna
+; Improves performance and resolution in handheld 
+[0100C9F009F7A000]
 handheld_gpu=460
 handheld_mem=1600
 ```
