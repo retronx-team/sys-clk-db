@@ -33,6 +33,15 @@ Those presets comes from our community in the RetroNX Discord
 in the channel `#oc-perf-submissions`
 
 ```ini
+; Animal Crossing: New Horizons
+; underclock to save battery, boost mode will be
+; disabled so loading times will increase, especially when starting the game
+[01006F8002326000]
+handheld_cpu=612
+handheld_gpu=307
+```
+
+```ini
 ; ARMS
 ; Underclock to save battery
 [01009B500007C000]
@@ -87,6 +96,14 @@ handheld_mem=665
 ```
 
 ```ini
+; Blazing Chrome
+; Underclock to save battery with bare minimum settings
+[0100C2700C252000]
+handheld_cpu=612
+handheld_gpu=76 
+```
+
+```ini
 ; Bloodstained: Curse of the Moon
 ; Underclocked to save battery
 [01004B800AF5A000]
@@ -117,6 +134,14 @@ handheld_mem=665
 ```
 
 ```ini
+; Bug Fables The Everlasting Sapling
+; Underclock to save battery
+[010051A00E99E000]
+handheld_cpu=612
+handheld_gpu=230
+```
+
+```ini
 ; Cadence of Hyrule: Crypt of the NecroDancer featuring The Legend of Zelda
 ; underclock to save battery
 [01000B900D8B0000]
@@ -135,12 +160,29 @@ handheld_mem=665
 ```
 
 ```ini
+; Castle Crashers Unlimited
+; Underclock to save battery @60fps
+[010001300D14A000]
+handheld_cpu=612
+handheld_gpu=230
+handheld_mem=665
+```
+
+```ini
 ; Cave Story+
 ; Underclock to save battery
 [0100B7D0022EE000]
 handheld_cpu=612
 handheld_gpu=153
 handheld_mem=665
+```
+
+```ini
+; Crimsonland
+; Underclock to save battery
+[01005640080B0000]
+handheld_cpu=612
+handheld_gpu=76
 ```
 
 ```ini
@@ -160,6 +202,15 @@ handheld_gpu=460
 ```
 
 ```ini
+; Devil May Cry
+; Underclock to save battery while maintaining 60fps
+[0100E8000D5B8000]
+handheld_cpu=816
+handheld_gpu=230
+handheld_mem=800
+```
+
+```ini
 ; DOOM
 ; Better Framerate (Adjust dock gpu between 768-921 based on your comfort level)
 ; via gbatemp thread
@@ -175,6 +226,14 @@ docked_gpu=844
 ; Doom 1993
 ; Underclock to save battery with bare minimum settings
 [010018900DD00000]
+handheld_cpu=612
+handheld_gpu=76
+```
+
+```ini
+; Doom 64
+; Underclock to save battery with bare minimum settings
+[01005D700E742000]
 handheld_cpu=612
 handheld_gpu=76
 ```
@@ -236,6 +295,14 @@ handheld_mem=1065
 ; Improves stutter when moving the camera at high speed and improves framerate of far NPC animation (15 -> 30)
 [01006C300E9F0000]
 docked_cpu=1581
+```
+
+```ini
+; Duke Nukem 3D 20th Anniversary World Tour
+; Underclock to save battery
+[01007EF00CB88000]
+handheld_cpu=612
+handheld_gpu=230
 ```
 
 ```ini
@@ -340,6 +407,23 @@ handheld_mem=1600
 ```
 
 ```ini
+; Hatsune Miku: Project DIVA Mega Mix
+; Overclock for better load times.
+[01001CC00FA1A000]
+docked_cpu=1785
+handheld_cpu=1785
+handheld_mem=1600
+```
+
+```ini
+; Katana Zero
+; Underclock to save battery
+[010029600D56A000]
+handheld_cpu=612
+handheld_gpu=153
+```
+
+```ini
 ; Kirby Star Allies
 ; Underclock to save battery
 [01007E3006DDA000]
@@ -364,10 +448,18 @@ handheld_mem=1600
 ```
 
 ```ini
-; The Legend of Zelda: Link's Awakening
+; Legend of Zelda: Link's Awakening
 ; Improved framerate in handheld, resolves most framerate issues in handheld_charging
 [01006BB00C6F0000]
 handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; LEGO City Undercover
+; Smoother framerate in handheld.
+[01003A30012C0000]
 handheld_gpu=460
 handheld_mem=1600
 ```
@@ -379,6 +471,26 @@ handheld_mem=1600
 handheld_cpu=612
 handheld_gpu=76
 handheld_mem=665
+```
+
+```ini
+; Luigi's Mansion 3 [700p]
+; NOTE: This will lower the res to 700p, but is
+; not noticeable in handheld due to TAA
+; Underclock to save battery
+; Adjust if needed, still @30fps
+[0100DCA0064A6000]
+handheld_cpu=714
+handheld_gpu=307
+handheld_mem=1600
+```
+
+```ini
+; LUMINES REMASTERED
+; Underclock to save battery
+[0100A4200A284000]
+handheld_cpu=918
+handheld_gpu=230
 ```
 
 ```ini
@@ -412,12 +524,29 @@ handheld_mem=665
 ```
 
 ```ini
+; Mega Man Legacy Collection 2
+; Underclock to save on battery
+[0100842008EC4000]
+handheld_cpu=714
+handheld_gpu=153
+handheld_mem=665
+```
+
+```ini
 ; Mega Man X Legacy Collection
 ; Underclock to save on battery
 [01005C60086BE000]
 handheld_cpu=816
 handheld_gpu=230
 handheld_mem=665
+```
+
+```ini
+; Mega Man X Legacy Collection 2
+; Underclock CPU, Mem to save on battery
+[01005250086C4000]
+handheld_cpu=714
+handheld_mem=1065
 ```
 
 ```ini
@@ -455,6 +584,15 @@ handheld_mem=665
 ```
 
 ```ini
+; N++
+; Underclock to save battery
+[01000D5005974000]
+handheld_cpu=612
+handheld_gpu=153
+handheld_mem=665
+```
+
+```ini
 ; New Super Mario Bros. U Deluxe
 ; Underclock to save battery
 [0100EA80032EA000]
@@ -478,6 +616,14 @@ handheld_gpu=76
 handheld_gpu=460
 handheld_charging_gpu=768
 handheld_charging_mem=1600
+```
+
+```ini
+; Picross S4
+; Underclock to save battery with bare minimum settings
+[0100C250115DC000]
+handheld_cpu=612
+handheld_gpu=76
 ```
 
 ```ini
@@ -505,6 +651,14 @@ handheld_mem=1600
 ```
 
 ```ini
+; Pokemon Mystery Dungeon: Rescue Team DX (USA)
+; Underclock to save battery @30fps
+[01003D200BAA2000]
+handheld_cpu=816
+handheld_mem=1065
+```
+
+```ini
 ; Pokemon Quest
 ; Since there are no real gameplay elements,
 ; and that there is very little slowdown in the worlds to worry about
@@ -513,6 +667,14 @@ handheld_mem=1600
 handheld_cpu=612
 handheld_gpu=76
 handheld_mem=665
+```
+
+```ini
+; Project Warlock
+; Underclock to save battery
+[0100BDB01150E000]
+handheld_cpu=612
+handheld_gpu=153
 ```
 
 ```ini
@@ -547,6 +709,17 @@ handheld_gpu=460
 [0100A62002042000]
 handheld_gpu=460
 handheld_mem=1600
+```
+
+```ini
+; Saints Row: The Third - The Full Package
+; Improves framerate and/or resolution,
+; More headroom when charging.
+; Should make open world antics more stable.
+[0100DE600BEEE000]
+handheld_cpu=1122
+handheld_mem=1600
+handheld_charging_gpu=460
 ```
 
 ```ini
@@ -589,6 +762,30 @@ handheld_gpu=460
 ```
 
 ```ini
+; Streets of Rage 4
+; Underclock to save battery with bare minimum settings
+[0100EC9010258000]
+handheld_cpu=612
+handheld_gpu=76
+```
+
+```ini
+; SubaraCity
+; Underclock to save battery
+[0100CD6004130000]
+handheld_cpu=612
+handheld_gpu=76
+```
+
+```ini
+; Super Kirby Clash
+; Underclock to save battery
+[01003FB00C5A8000]
+handheld_cpu=918
+handheld_mem=1065
+```
+
+```ini
 ; Super Mario Maker 2
 ; Underclock to save battery (slightly increases loading times)
 [01009B90006DC000]
@@ -615,6 +812,22 @@ handheld_gpu=76
 ```
 
 ```ini
+; Super Smash Bros. Ultimate
+; Underclock to save battery
+[01006A800016E000]
+handheld_cpu=816
+handheld_mem=1065
+```
+
+```ini
+; SWORD ART ONLINE: Hollow Realization Deluxe Edition
+; Overclock GPU, Mem for smoother framerate in handheld mode
+[0100EC400D54E000]
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
 ; Tales of Vesperia
 ; Better performance in cities and map
 [01002C0008E52000]
@@ -629,6 +842,14 @@ handheld_mem=1600
 handheld_cpu=612
 handheld_gpu=230
 handheld_mem=665
+```
+
+```ini
+; The Grisaia Trilogy
+; Underclock to save battery
+[01003B300E4AA000]
+handheld_cpu=612
+habdheld_gpu=76
 ```
 
 ```ini
@@ -709,6 +930,16 @@ handheld_mem=665
 ```
 
 ```ini
+; Warface
+; Overclocks GPU, Mem for better performance.
+; By default, Warface uses the lower performance
+; GPU default setting.
+[0100D1E00E972000]
+handheld_gpu=384
+handheld_mem=1600
+```
+
+```ini
 ; West of Loathing
 ; Downclock all the things. It's a 2D game.
 [010031B00A4E8000]
@@ -760,6 +991,18 @@ handheld_mem=1600
 ; Improves performance and resolution in handheld
 [0100C9F009F7A000]
 handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Xenoblade Chonicles Definitive Edition
+; Improves performance and resolution in docked and handheld
+; NOTE: CPU OC is for Future Connected, and can be disabled for the regular base game.
+[0100FF500E34A000]
+docked_gpu=921
+docked_cpu=1581
+handheld_gpu=460
+handheld_cpu=1224
 handheld_mem=1600
 ```
 
