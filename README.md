@@ -160,6 +160,14 @@ handheld_mem=665
 ```
 
 ```ini
+; CARRION
+; Underclock to save battery - stable 60fps
+[0100B1600E9AE000]
+handheld_cpu=612
+handheld_gpu=153
+```
+
+```ini
 ; Castle Crashers Unlimited
 ; Underclock to save battery @60fps
 [010001300D14A000]
@@ -416,6 +424,20 @@ handheld_mem=1600
 ```
 
 ```ini
+; Hyrule Warriors: Age of Calamity
+; Overclock to improve frame rate and resolution
+; Docked mode does not maintain stable framerates even with 1785
+[01002B00111A2000]
+handheld_cpu=1326
+handheld_gpu=460
+handheld_mem=1600
+handheld_charging_cpu=1785
+handheld_charging_gpu=614
+docked_cpu=1785
+docked_gpu=921
+```
+
+```ini
 ; Katana Zero
 ; Underclock to save battery
 [010029600D56A000]
@@ -619,6 +641,19 @@ handheld_charging_mem=1600
 ```
 
 ```ini
+; Persona 5 Strikers
+; overclock to improve preformance and help dynamic resolution
+[0100801011C3E000]
+handheld_cpu=1326
+handheld_gpu=460
+handheld_mem=1600
+handheld_charging_cpu=1785
+handheld_charging_gpu=614
+docked_cpu=1785
+docked_gpu=844
+```
+
+```ini
 ; Picross S4
 ; Underclock to save battery with bare minimum settings
 [0100C250115DC000]
@@ -753,6 +788,17 @@ handheld_mem=665
 ```
 
 ```ini
+; Splatoon 2
+; Underclock to save battery
+; Overclock to improve resolution
+[01003BC0000A0000]
+handheld_cpu=816
+handheld_mem=1600
+handheld_charging_gpu=614
+docked_gpu=921
+```
+
+```ini
 ; Starlink: Battle for Atlas
 ; Improve resolutions and performance for handheld mode
 [01002CC003FE6000]
@@ -783,6 +829,20 @@ handheld_gpu=76
 [01003FB00C5A8000]
 handheld_cpu=918
 handheld_mem=1065
+```
+
+```ini
+; Super Mario 3d All Stars
+; The game switches title ids when launching any of the games, as such, the game select will be the only thing affected
+; Overclock to improve loading times
+; Underclock to save some battery
+[010049900F546000]
+handheld_cpu=714
+handheld_gpu=153
+handheld_mem=1065
+handheld_charging_cpu=1785
+docked_cpu=1785
+docked_gpu=460
 ```
 
 ```ini
@@ -851,6 +911,16 @@ handheld_mem=665
 handheld_cpu=612
 habdheld_gpu=76
 ```
+
+```ini
+; The World Ends With You, Final Remix
+; Underclock to save battery
+[0100C1500B82E000]
+handheld_cpu=714
+handheld_gpu=230
+handheld_mem=1065
+```
+ 
 
 ```ini
 ; Travis Strikes Again
@@ -1012,4 +1082,13 @@ handheld_mem=1600
 [01003A400C3DA000]
 handheld_gpu=153
 handheld_mem=665
+```
+
+```ini
+; Yu-Gi-Oh!  Legacy of The Duelist: Link Evolution
+; Underclock to save battery
+; 55-60 FPS in story duels
+[010022400BE5A000]
+handheld_cpu=612
+handheld_gpu=76
 ```
