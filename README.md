@@ -157,7 +157,7 @@ handheld_mem=665
 
 ```ini
 ; Azure Striker Gunvolt: Striker Pack
-; underclock to reduce heat/save battery
+; Underclock to reduce heat/save battery
 [0100192003FA4000]
 handheld_cpu=612
 handheld_gpu=153
@@ -344,7 +344,7 @@ handheld_mem=665
 ```
 
 ```ini
-; Catherine: Full Body
+; Catherine: Full Body (US)
 ; Underclock to save battery in handheld
 ; Underclock to reduce power consumption Docked/Official charger
 ; Small resolution penalty in handheld (you can go lower if you don't mind sawtooth)
@@ -425,7 +425,7 @@ handheld_gpu=460
 ```
 
 ```ini
-; Destroy All Humans!
+; Destroy All Humans! (US)
 ; Underclock CPU to reduce battery/energy consumption in handheld/dock/charger (you can go as low as 612MHz won't drop a frame except in saucer, it will drop between 2 to 4 frames when it gets full of NPCs, but I mean a ridiculously full, that's why 714MHz)
 ; Overclock GPU to increase resolution (Wont be noticeable past 691MHz)
 ; Overclock MEM to reduce object/texture pop-in
@@ -500,7 +500,7 @@ handheld_gpu=76
 ```
 
 ```ini
-; Dragon Ball Xenoverse 2
+; Dragon Ball Xenoverse 2 (US)
 ; Underclock CPU to reduce battery/energy consumption in handheld/dock/charging (you can go as los as 714MHz, I didn't experience any frame drops but to be sure I left it at 816MHz)
 ; Underclocked GPU on docked/charging to reduce energy consumption (small resolution penalty docked that's why 537MHz, no penalty charging)
 ; Overclocked MEM to reduce object/texture pop-in
@@ -771,7 +771,7 @@ handheld_mem=1600
 ```
 
 ```ini
-; Grand Theft Auto: San Andreas - The Definitive Edition
+; Grand Theft Auto: San Andreas - The Definitive Edition (US)
 ; Overclock for smoother gameplay
 ; It will decrease your handheld playtime by 30 to 45 min.
 [010065A014024000]
@@ -811,7 +811,7 @@ handheld_mem=1600
 ```
 
 ```ini
-; A Hat in Time
+; A Hat in Time (US)
 ; Boosts clock for noticeably faster loading screens and better framerate in handheld
 ; The unfinished Nyakuza included with Seal the Deal's romfs now runs at 30fps
 [010056E00853A000]
@@ -1347,7 +1347,7 @@ handheld_mem=1600
 ```
 
 ```ini
-; Pokemon Mystery Dungeon: Rescue Team DX
+; Pokemon Mystery Dungeon: Rescue Team DX (USA)
 ; Underclock to save battery @30fps
 [01003D200BAA2000]
 handheld_cpu=816
@@ -2069,7 +2069,7 @@ handheld_mem=1600
 ```
 
 ```ini
-; The Witcher 3 - Complete Edition
+; The Witcher 3 - Complete Edition (US)
 ; Overclock RAM for smoother framerate in handheld mode
 ; Improve resolutions and performance in handheld_charging
 ; Limit GPU clock to save battery in handheld. Slight decrease to FPS
