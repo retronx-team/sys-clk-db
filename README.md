@@ -125,12 +125,35 @@ handheld_mem=1600
 ```
 
 ```ini
+; Bloodstained: Ritual of the Night CHT
+; Provides the game to run generally smoother in handheld mode
+[010025A00DF2A000]
+docked_cpu=1683
+docked_gpu=921
+handheld_charging_cpu=1224
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
 ; Blossom Tales: The Sleeping King
 ; Underclock to save battery
 [0100C1000706C000]
 handheld_cpu=612
 handheld_gpu=153
 handheld_mem=665
+```
+
+```ini
+; Broforce
+; underclock to save battery, level selection screen and main menu has slight slowdowns.
+[010060A00B53C000]
+handheld_cpu=714
+handheld_gpu=76
+handheld_mem=1065
 ```
 
 ```ini
@@ -272,6 +295,7 @@ handheld_mem=1600
 ```ini
 ; Dragon Dogma Dark Arisen (JPN)
 ; Better framerate
+[010057E00AC56000]
 docked_cpu=1224
 docked_gpu=844
 handheld_charging_cpu=1122
@@ -909,7 +933,7 @@ handheld_mem=665
 ; Underclock to save battery
 [01003B300E4AA000]
 handheld_cpu=612
-habdheld_gpu=76
+handheld_gpu=76
 ```
 
 ```ini
@@ -1040,6 +1064,15 @@ handheld_charging_gpu=768
 ```
 
 ```ini
+; The Witcher 3 - Complete Edition (EU)
+; Same preset as the US version
+[01003D100E9C6000]
+handheld_mem=1600
+handheld_gpu=384
+handheld_charging_gpu=768
+```
+
+```ini
 ; Wolfenstein II: The New Colossus
 ; Provides higher resolution with more stable framerate in undocked mode
 [01009040091E0000]
@@ -1091,4 +1124,838 @@ handheld_mem=665
 [010022400BE5A000]
 handheld_cpu=612
 handheld_gpu=76
+```
+
+## Profile-based presets
+
+These presets are grouped into five reusable profiles instead of being tuned one by one.
+A game is assigned to a profile from its known Switch performance and, when it exists, from
+the GPU listed in its PC minimum requirements (around a GTX 660 or higher: PERF/MAX; GTS 450,
+Intel HD or less: COMFORT/ECO). They are starting points, not per-game measurements: adjust
+them with the overlay if a game still drops frames or runs hot.
+
+| Profile | Docked (CPU/GPU/MEM) | Handheld charging (CPU/GPU/MEM) | Handheld (CPU/GPU/MEM) |
+|---|---|---|---|
+| ECO | stock | stock | stock / 230 / 1065 |
+| COMFORT | stock | stock / 768 / stock | stock / 460 / 1600 |
+| PERF | 1428 / 921 / 1600 | 1428 / 768 / 1600 | 1224 / 460 / 1600 |
+| ACTION | 1785 / 921 / stock | 1785 / 614 / stock | 1326 / 460 / 1600 |
+| MAX | 1785 / 921 / 1600 | 1428 / 768 / 1600 (official charger: 1581 / 768 / 1600) | 1224 / 460 / 1600 |
+
+sys-clk still caps the handheld GPU on battery (460 MHz Erista, 614 MHz Mariko) and when charging (768 MHz).
+
+```ini
+; Disco Elysium - The Final Cut
+; MAX profile: highest stock-sys-clk clocks that stay sustainable over long sessions
+[01006C5015E84000]
+docked_cpu=1785
+docked_gpu=921
+docked_mem=1600
+handheld_charging_official_cpu=1581
+handheld_charging_official_gpu=768
+handheld_charging_official_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; It Takes Two
+; MAX profile: highest stock-sys-clk clocks that stay sustainable over long sessions
+[010092A0172E4000]
+docked_cpu=1785
+docked_gpu=921
+docked_mem=1600
+handheld_charging_official_cpu=1581
+handheld_charging_official_gpu=768
+handheld_charging_official_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Outer Wilds
+; MAX profile: highest stock-sys-clk clocks that stay sustainable over long sessions
+[01003DC0144B6000]
+docked_cpu=1785
+docked_gpu=921
+docked_mem=1600
+handheld_charging_official_cpu=1581
+handheld_charging_official_gpu=768
+handheld_charging_official_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Overcooked! All You Can Eat
+; MAX profile: highest stock-sys-clk clocks that stay sustainable over long sessions
+[0100F28011892000]
+docked_cpu=1785
+docked_gpu=921
+docked_mem=1600
+handheld_charging_official_cpu=1581
+handheld_charging_official_gpu=768
+handheld_charging_official_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Vampire Survivors
+; MAX profile: highest stock-sys-clk clocks that stay sustainable over long sessions
+[010089A0197E4000]
+docked_cpu=1785
+docked_gpu=921
+docked_mem=1600
+handheld_charging_official_cpu=1581
+handheld_charging_official_gpu=768
+handheld_charging_official_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; XCOM 2 Collection
+; MAX profile: highest stock-sys-clk clocks that stay sustainable over long sessions
+[0100D0B00FB74000]
+docked_cpu=1785
+docked_gpu=921
+docked_mem=1600
+handheld_charging_official_cpu=1581
+handheld_charging_official_gpu=768
+handheld_charging_official_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Hades
+; ACTION profile: same values as the Hyrule Warriors: Age of Calamity community preset
+[0100535012974000]
+docked_cpu=1785
+docked_gpu=921
+handheld_charging_cpu=1785
+handheld_charging_gpu=614
+handheld_cpu=1326
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Hyrule Warriors: Definitive Edition
+; ACTION profile: same values as the Hyrule Warriors: Age of Calamity community preset
+[0100AE00096EA000]
+docked_cpu=1785
+docked_gpu=921
+handheld_charging_cpu=1785
+handheld_charging_gpu=614
+handheld_cpu=1326
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; NieR:Automata The End of YoRHa Edition
+; ACTION profile: same values as the Hyrule Warriors: Age of Calamity community preset
+[010056B015FE8000]
+docked_cpu=1785
+docked_gpu=921
+handheld_charging_cpu=1785
+handheld_charging_gpu=614
+handheld_cpu=1326
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; 13 Sentinels: Aegis Rim
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[01003FC01670C000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Children of Morta
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[01002DE00C250000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Dispatch
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[01008BA02525A000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Enter the Gungeon
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[01009D60076F6000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Final Fantasy XII The Zodiac Age
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[0100EB100AB42000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Haven
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[0100E2600DBAA000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Kirby and the Forgotten Land
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[01004D300C5AE000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Metroid Dread
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[010093801237C000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Octopath Traveler
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[010057D006492000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Octopath Traveler II
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[0100A3501946E000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Paper Mario: The Origami King
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[0100A3900C3E2000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Super Mario 3D World + Bowser's Fury
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[010028600EBDA000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Super Mario Odyssey
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[0100000000010000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Teenage Mutant Ninja Turtles: Splintered Fate
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[01005CF01E784000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; The Legend of Zelda: Echoes of Wisdom
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[01008CF01BAAC000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Triangle Strategy
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[0100CC80140F8000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; TUNIC
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[0100DA801624E000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Unicorn Overlord
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[010069401ADB8000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; World of Goo 2
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[010061F01DB7C000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Bastion
+; COMFORT profile: mostly stable game, small handheld boost
+[010038600B27E000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Batman: The Enemy Within
+; COMFORT profile: mostly stable game, small handheld boost
+[0100E6300AA3A000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Brigandine: The Legend of Runersia
+; COMFORT profile: mostly stable game, small handheld boost
+[010011000EA7A000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Castlevania: Belmont's Curse
+; COMFORT profile: mostly stable game, small handheld boost
+[0100BA4026E94000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Chants of Sennaar
+; COMFORT profile: mostly stable game, small handheld boost
+[0100543019CB0000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Cuphead
+; COMFORT profile: mostly stable game, small handheld boost
+[0100A5C00D162000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Darkest Dungeon
+; COMFORT profile: mostly stable game, small handheld boost
+[01008F1008DA6000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Dead Cells
+; COMFORT profile: mostly stable game, small handheld boost
+[0100646009FBE000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Donkey Kong Country: Tropical Freeze
+; COMFORT profile: mostly stable game, small handheld boost
+[0100C1F0051B6000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; GRIS
+; COMFORT profile: mostly stable game, small handheld boost
+[0100E1700C31C000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Guacamelee! 2
+; COMFORT profile: mostly stable game, small handheld boost
+[01007E100456C000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Guacamelee! Super Turbo Championship Edition
+; COMFORT profile: mostly stable game, small handheld boost
+[0100BAE00B470000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Have a Nice Death
+; COMFORT profile: mostly stable game, small handheld boost
+[0100125019A14000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Hollow Knight
+; COMFORT profile: mostly stable game, small handheld boost
+[0100633007D48000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Jotun: Valhalla Edition
+; COMFORT profile: mostly stable game, small handheld boost
+[0100340009736000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Kirby's Return to Dream Land Deluxe
+; COMFORT profile: mostly stable game, small handheld boost
+[01006B601380E000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Mario Party Superstars
+; COMFORT profile: mostly stable game, small handheld boost
+[01006FE013472000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Neon White
+; COMFORT profile: mostly stable game, small handheld boost
+[0100B9201406A000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Night in the Woods
+; COMFORT profile: mostly stable game, small handheld boost
+[0100921006A04000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Ori and the Blind Forest: Definitive Edition
+; COMFORT profile: mostly stable game, small handheld boost
+[010061D00DB74000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Rogue Legacy 2
+; COMFORT profile: mostly stable game, small handheld boost
+[01007DA0134C0000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Slay the Spire
+; COMFORT profile: mostly stable game, small handheld boost
+[010026300BA4A000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Spiritfarer
+; COMFORT profile: mostly stable game, small handheld boost
+[0100BD400DC52000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Super Mario Bros. Wonder
+; COMFORT profile: mostly stable game, small handheld boost
+[010015100B514000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Super Mario Party
+; COMFORT profile: mostly stable game, small handheld boost
+[010036B0034E4000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Super Mario Party Jamboree
+; COMFORT profile: mostly stable game, small handheld boost
+[0100965017338000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Teenage Mutant Ninja Turtles: Shredder's Revenge
+; COMFORT profile: mostly stable game, small handheld boost
+[0100FE701475A000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; The Stanley Parable: Ultra Deluxe
+; COMFORT profile: mostly stable game, small handheld boost
+[010029300E5C4000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Untitled Goose Game
+; COMFORT profile: mostly stable game, small handheld boost
+[010082400BCC6000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; WarioWare: Get It Together!
+; COMFORT profile: mostly stable game, small handheld boost
+[0100563010E0C000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; WarioWare: Move It!
+; COMFORT profile: mostly stable game, small handheld boost
+[010045B018EC2000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Wylde Flowers
+; COMFORT profile: mostly stable game, small handheld boost
+[010055201822E000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; A Little to the Left
+; ECO profile: light game, handheld underclock to save battery
+[0100354017668000]
+handheld_gpu=230
+handheld_mem=1065
+```
+
+```ini
+; Banner Saga 2
+; ECO profile: light game, handheld underclock to save battery
+[0100388008758000]
+handheld_gpu=230
+handheld_mem=1065
+```
+
+```ini
+; Banner Saga 3
+; ECO profile: light game, handheld underclock to save battery
+[010071E00875A000]
+handheld_gpu=230
+handheld_mem=1065
+```
+
+```ini
+; Braid, Anniversary Edition
+; ECO profile: light game, handheld underclock to save battery
+[010089C00B026000]
+handheld_gpu=230
+handheld_mem=1065
+```
+
+```ini
+; Into the Breach
+; ECO profile: light game, handheld underclock to save battery
+[010057D00B612000]
+handheld_gpu=230
+handheld_mem=1065
+```
+
+```ini
+; Mina the Hollower
+; ECO profile: light game, handheld underclock to save battery
+[0100DCD01F306000]
+handheld_gpu=230
+handheld_mem=1065
+```
+
+```ini
+; Return of the Obra Dinn
+; ECO profile: light game, handheld underclock to save battery
+[010032E00E6E2000]
+handheld_gpu=230
+handheld_mem=1065
+```
+
+```ini
+; Snipperclips
+; ECO profile: light game, handheld underclock to save battery
+[0100704000B3A000]
+handheld_gpu=230
+handheld_mem=1065
+```
+
+```ini
+; Snipperclips Plus
+; ECO profile: light game, handheld underclock to save battery
+[01008E20047DC000]
+handheld_gpu=230
+handheld_mem=1065
+```
+
+```ini
+; Stacklands
+; ECO profile: light game, handheld underclock to save battery
+[01008B701BEE8000]
+handheld_gpu=230
+handheld_mem=1065
+```
+
+```ini
+; The Banner Saga
+; ECO profile: light game, handheld underclock to save battery
+[0100465008756000]
+handheld_gpu=230
+handheld_mem=1065
+```
+
+```ini
+; The Messenger
+; ECO profile: light game, handheld underclock to save battery
+[0100DC300AC78000]
+handheld_gpu=230
+handheld_mem=1065
 ```
