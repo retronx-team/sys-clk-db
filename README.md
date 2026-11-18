@@ -909,7 +909,7 @@ handheld_mem=665
 ; Underclock to save battery
 [01003B300E4AA000]
 handheld_cpu=612
-habdheld_gpu=76
+handheld_gpu=76
 ```
 
 ```ini
