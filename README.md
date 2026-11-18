@@ -125,12 +125,35 @@ handheld_mem=1600
 ```
 
 ```ini
+; Bloodstained: Ritual of the Night CHT
+; Provides the game to run generally smoother in handheld mode
+[010025A00DF2A000]
+docked_cpu=1683
+docked_gpu=921
+handheld_charging_cpu=1224
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
 ; Blossom Tales: The Sleeping King
 ; Underclock to save battery
 [0100C1000706C000]
 handheld_cpu=612
 handheld_gpu=153
 handheld_mem=665
+```
+
+```ini
+; Broforce
+; underclock to save battery, level selection screen and main menu has slight slowdowns.
+[010060A00B53C000]
+handheld_cpu=714
+handheld_gpu=76
+handheld_mem=1065
 ```
 
 ```ini
@@ -272,6 +295,7 @@ handheld_mem=1600
 ```ini
 ; Dragon Dogma Dark Arisen (JPN)
 ; Better framerate
+[010057E00AC56000]
 docked_cpu=1224
 docked_gpu=844
 handheld_charging_cpu=1122
@@ -1034,6 +1058,15 @@ handheld_mem=1600
 ; Limit GPU clock to save battery in handheld. Slight decrease to FPS
 ; EU version: [01003D100E9C6000]
 [0100BFE00E9CA000]
+handheld_mem=1600
+handheld_gpu=384
+handheld_charging_gpu=768
+```
+
+```ini
+; The Witcher 3 - Complete Edition (EU)
+; Same preset as the US version
+[01003D100E9C6000]
 handheld_mem=1600
 handheld_gpu=384
 handheld_charging_gpu=768
