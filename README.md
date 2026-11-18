@@ -1289,6 +1289,21 @@ handheld_mem=1600
 ```
 
 ```ini
+; Dispatch
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[01008BA02525A000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
 ; Enter the Gungeon
 ; PERF profile: 3D or heavy game with known framerate drops on Switch
 [01009D60076F6000]
@@ -1367,6 +1382,21 @@ handheld_mem=1600
 ; Octopath Traveler
 ; PERF profile: 3D or heavy game with known framerate drops on Switch
 [010057D006492000]
+docked_cpu=1428
+docked_gpu=921
+docked_mem=1600
+handheld_charging_cpu=1428
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+handheld_cpu=1224
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Octopath Traveler II
+; PERF profile: 3D or heavy game with known framerate drops on Switch
+[0100A3501946E000]
 docked_cpu=1428
 docked_gpu=921
 docked_mem=1600
@@ -1526,6 +1556,15 @@ handheld_mem=1600
 ; Batman: The Enemy Within
 ; COMFORT profile: mostly stable game, small handheld boost
 [0100E6300AA3A000]
+handheld_charging_gpu=768
+handheld_gpu=460
+handheld_mem=1600
+```
+
+```ini
+; Brigandine: The Legend of Runersia
+; COMFORT profile: mostly stable game, small handheld boost
+[010011000EA7A000]
 handheld_charging_gpu=768
 handheld_gpu=460
 handheld_mem=1600
